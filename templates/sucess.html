@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block container %}
+{% if message %}
+    <p class="message">{{ message | safe }}</p>
+{%endif%}
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block container %}
+        <form class="mt-5 pt-5" action="/upload" method="POST" enctype="multipart/form-data" >
+            <!-- <div class="custom-file">
+                <input type="file" class="custom-file-input" id="customFile" name="file" accept=".jpg,.png,.jpeg">
+                <label class="custom-file-label" for="customFile">Choose file</label>
+            </div>
+            <div class="text-center">
+                <button type="submit" name="" id="" class="btn btn-primary mt-5 text-center" btn-lg
+                    btn-block">Upload</button>
+            </div> -->
+            <!-- <div class="form-group">
+                    <label for="exampleFormControlFile1">Example file input</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                  </div>
+                  <button type="submit">Upload</button> -->
+
+                  
+                    
+                  <input type="file" name="file" required/>  
+                  <input type = "submit" value="Upload">  
+                    
+                
+            
+                    
+                   
+                   
+
+        </form>
+{% endblock %}
+    
