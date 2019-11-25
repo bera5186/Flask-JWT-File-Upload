@@ -34,13 +34,11 @@ def token_required(f):
 
         if not token:
             return render_template('sucess.html', message = 'Token Missing')
-            #return jsonify({"message": "token Missing"})
         try:
             data = jwt.decode(token, app.config["SECRET_KEY"])
 
         except:
             return render_template('sucess.html', message = 'Token Expired')
-            #return jsonify({"message": "Token Expired"})
 
         return f(*args, **kwargs)
 
@@ -103,7 +101,7 @@ def getauthtoken():
             token = jwt.encode(
                 {
                     "user": user["email"],
-                    "exp": datetime.datetime.utcnow() + datetime.timedelta(minutes=2),
+                    "exp": datetime.datetime.utcnow() + datetime.timedelta(minutes=20),
                 },
                 app.config["SECRET_KEY"],
             )
