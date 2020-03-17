@@ -1,5 +1,7 @@
 # Flask-JWT-File-Upload
 
+[![Build Status](https://travis-ci.com/bera5186/Flask-JWT-File-Upload.svg?branch=master)](https://travis-ci.com/bera5186/Flask-JWT-File-Upload)
+
 A flask web application for uploading file with following features in it's backend API
 
 * JWT based authentication system where token expires in 20 minutes
