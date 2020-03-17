@@ -27,12 +27,8 @@ class BasicTestCase(unittest.TestCase):
         )
         self.assertEqual(response.status_code, 200)
 
-    def test_token_generated(self):
-        tester = app.test_client(self)
-        response = tester.post(
-            "/getauthtoken", data=dict(email="someuser@gmail.com", password="pass123")
-        )
-        self.assertEqual(response.status_code, 200)
+    
+        
 
 
 if __name__ == "__main__":
