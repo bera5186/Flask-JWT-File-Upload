@@ -11,7 +11,7 @@ from pymongo import MongoClient
 import bcrypt
 
 salt = bcrypt.gensalt(10)
-client = MongoClient()
+client = MongoClient('mongodb+srv://rahulbera21:rahul123@cluster0-9qlne.mongodb.net/test?retryWrites=true&w=majority')
 db = client.flask_jwt_api_file_upload
 users = db.users
 
@@ -114,4 +114,4 @@ def getauthtoken():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)

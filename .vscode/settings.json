@@ -1,5 +1,5 @@
 {
     "liveServer.settings.port": 5501,
-    "python.pythonPath": "C:\\Users\\Rahul\\AppData\\Local\\Programs\\Python\\Python36\\python.exe",
+    "python.pythonPath": "C:\\Users\\Rahul\\Anaconda3\\python.exe",
     "python.formatting.provider": "black"
 }
